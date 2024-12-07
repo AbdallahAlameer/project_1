@@ -1,0 +1,1042 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    background-color: rgba(116, 30, 30, 0.8);
+    z-index: 50;
+}
+
+.header-list {
+    list-style: none;
+    text-transform: capitalize;
+    float: right;
+}
+
+.header-item {
+    position: relative;
+}
+
+.header-item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 254, 254);
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.header-item:hover::after {
+    width: 100%;
+    height: 2;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.header-list a {
+    text-decoration: solid;
+    color: aliceblue;
+}
+
+.header-list li {
+    display: inline-block;
+    margin: 20 20;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.blog {
+    position: relative;
+}
+
+.blog-list li a {
+    text-decoration: none;
+    color: rgb(245, 237, 237);
+}
+
+.blog-list {
+    position: absolute;
+    left: 0;
+    background-color: rgba(116, 30, 30, 0.8);
+    color: rgb(139, 58, 58);
+    width: 150;
+    border: 1px solid;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 1;
+}
+
+.blog:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.header-font {
+    color: antiquewhite;
+    margin: 10 20;
+    font-size: 25;
+}
+
+.header-search {
+    margin: 5 0;
+    width: 250;
+    height: 30;
+    border-radius: 40px;
+}
+
+.search1 {
+    margin-left: -240;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/best_vanilla_perfumes_002.webp);
+}
+
+.home-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.home-content {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-title {
+    color: antiquewhite;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.home-paragraph {
+    color: rgba(250, 235, 215, 0.8);
+    margin: 10 0;
+    text-transform: capitalize;
+}
+
+.home-btn {
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 5;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.home-btn2 {
+    background-color: rgba(255, 0, 0, 0.256);
+    color: rgb(255, 255, 255);
+}
+
+.home-btn:hover {
+    opacity: 0.7;
+}
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-header {
+    text-align: center;
+    margin-top: 80;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.welcome-line {
+    width: 130;
+    height: 3;
+    background-color: rgb(105, 11, 11);
+    margin-top: 5;
+    margin-left: 610;
+}
+
+.fully {
+    float: left;
+    width: 320;
+    height: 220;
+    margin-top: 80;
+    margin-left: 80;
+    margin-right: 20;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-color: brown;
+    border-radius: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.font {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(137, 9, 9);
+    padding: 15 0;
+}
+
+.fully_h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size: 30;
+}
+
+.fully-p {
+    padding-top: 10;
+    margin-bottom: 30;
+    opacity: 0.4;
+}
+
+.fully-link {
+    color: rgb(136, 34, 34);
+    text-transform: capitalize;
+    z-index: 3;
+}
+
+.fully-link:hover {
+    cursor: pointer;
+}
+
+.fully:hover .fully_h2 {
+    color: rgb(95, 5, 5);
+}
+
+.fully:hover .fully-p {
+    opacity: 1;
+}
+
+.fully:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: rgb(129, 28, 28);
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.fully:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.25;
+}
+
+.works {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(165, 42, 42, 0.163);
+    position: relative;
+}
+
+.works-hrt:hover {
+    color: rgb(231, 22, 22);
+    transition: 0.8;
+}
+
+.works-title {
+
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40;
+    padding-top: 40;
+}
+
+.works-line {
+    width: 80;
+    height: 3;
+    background-color: rgb(105, 11, 11);
+    margin-top: 10;
+    margin-left: 635;
+}
+
+.img-contaner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300;
+    float: left;
+    margin: 20 20;
+    margin: 20 40 10 80;
+    height: 200;
+}
+
+.imgs {
+    width: 320;
+    float: left;
+    height: 200;
+}
+
+.category {
+    position: absolute;
+    z-index: 3;
+    float: left;
+    text-align: center;
+    width: 320;
+    height: 200;
+    background-color: rgba(0, 0, 0, 0.479);
+    visibility: hidden;
+}
+
+.category-h2 {
+    color: rgb(171, 172, 173);
+    padding-top: 40;
+    font-size: 30;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.category-p {
+    color: rgb(255, 255, 255);
+    margin-top: 25;
+}
+
+.category-i {
+    color: beige;
+    font-size: 30;
+    padding: 20 5;
+}
+
+.img-contaner:hover .category {
+    visibility: visible;
+}
+
+.offer-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.title-offer {
+    margin-top: 100;
+    font-size: 40;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-offer div {
+    width: 60;
+    height: 3;
+    background-color: rgb(61, 5, 8);
+    margin-left: 630;
+    margin-top: 5;
+}
+
+.parent {
+    overflow: auto;
+}
+
+.parent div {
+    width: 300;
+    height: 220;
+    margin: 30 20 10 100;
+    background-color: rgb(253, 255, 255);
+    border: 1px solid brown;
+    ;
+    border-radius: 5%;
+    float: left;
+
+}
+
+.i {
+    font-size: xx-large;
+    color: rgb(137, 9, 9);
+    margin: 10 5;
+    float: left;
+    display: inline;
+    padding-top: 15;
+}
+
+.div1 h2 {
+    float: right;
+    font-size: 25;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 40;
+    padding-right: 10;
+    margin-top: -40;
+    margin-left: 10;
+    font-weight: bold;
+}
+
+.div1 p {
+    float: left;
+    padding: 15 30 15 40;
+
+    color: rgb(112, 110, 110);
+}
+
+.div1:hover h2 {
+    color: rgb(136, 13, 13);
+}
+
+.div1:hover p {
+    color: rgb(8, 8, 8);
+}
+
+.div1 {
+    position: relative;
+
+}
+
+.div1:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: rgb(129, 28, 28);
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.div1:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.25;
+}
+
+.section5 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.choose-us {
+    width: 40%;
+    float: left;
+    /*   */
+    background-color: rgb(255, 255, 255);
+    margin-left: 50;
+    margin-top: 150;
+}
+
+.choose-h2 {
+    font-size: 40;
+    padding-left: 45;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.choose-line {
+    width: 80;
+    height: 3;
+    background-color: rgb(187, 20, 20);
+    margin: 5 45;
+}
+
+.choose-p {
+    padding: 30;
+    color: rgb(93, 91, 91);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sec5ul li {
+    font-size: 17;
+    padding-left: 30;
+    list-style: none;
+    color: rgb(136, 131, 131);
+    line-height: 4;
+}
+
+.ul-i {
+    color: brown;
+}
+
+.choose-img {
+    width: 40%;
+    float: right;
+    height: 100%;
+    margin-top: 150;
+    position: relative;
+}
+
+.cho-img {
+    width: 70%;
+    height: 80%;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    padding-left: 25%;
+
+}
+
+.circles {
+    float: left;
+    width: 15;
+    height: 15;
+    margin: 2% 0 0 10;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-color: rgba(190, 27, 27, 0.7);
+}
+
+.circle2,
+.circle3 {
+    background-color: rgb(164, 161, 161);
+}
+
+.circle2:hover {
+    background-color: rgba(190, 27, 27, 0.7);
+}
+
+.circle3:hover {
+    background-color: rgba(190, 27, 27, 0.7);
+}
+
+.sec6-contaner {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.sec6-background {
+    background-image: url(../images/Houbigant_-_Tabac_Nomade_eau_de_parfum_5.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 150 0;
+    width: 100%;
+    height: 70%;
+}
+
+.sec6-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 2, 2, 0.65);
+    position: relative;
+}
+
+.sec6-items {
+    width: 80%;
+    position: absolute;
+    overflow: auto;
+    text-align: center;
+    margin-top: 150;
+    margin-left: 10%;
+}
+
+.item {
+    width: 25%;
+    float: left;
+    text-align: center;
+
+}
+
+.sec6-i {
+    font-size: 45;
+    color: rgb(164, 17, 17);
+}
+
+.icon-h2 {
+    margin-top: 15;
+    font-size: 20;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(241, 165, 51);
+}
+
+.icon-p {
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section7-h2 {
+    font-size: 40;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.section7-line {
+    width: 80;
+    height: 3;
+    background-color: rgb(105, 11, 11);
+    margin-top: 7;
+    margin-left: 635;
+}
+
+.divs-pircing {
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.pircing {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(170, 10, 10);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    margin-top: 50;
+    position: relative;
+}
+
+.pricing-2 {
+    margin-left: 50;
+    margin-right: 50;
+}
+
+.pircing-h4 {
+    font-size: 20;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.salary {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1.8px solid rgb(170, 10, 10);
+    padding: 12px 0px;
+    margin: 20px auto;
+}
+
+.salary-h2 {
+    font-size: 35;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.salary-p {
+    margin-top: 5;
+}
+
+.pircing-p {
+    line-height: 2.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pricing-pttn {
+    margin-top: 5;
+    width: 180;
+    height: 30;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(243, 237, 237);
+    text-align: center;
+    border: 1px solid brown;
+    border-radius: 20px;
+}
+
+.pircing:hover .pircing-h4 {
+    color: brown;
+}
+
+.pircing:hover .salary {
+    border: 2px solid rgb(199, 36, 36);
+}
+
+.pircing::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    opacity: 0;
+}
+
+.pircing:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.sec8-contaner {
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+.sec8-background {
+    background-image: url(../images/sec8-2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 120 0;
+    width: 100%;
+    height: 70%;
+}
+
+.sec8-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 2, 2, 0.55);
+    position: relative;
+}
+
+.sec8-items {
+    overflow: auto;
+    text-align: center;
+}
+
+.sec8-body {
+    height: 100%;
+    margin-left: 260;
+}
+
+.sec8-content {
+    float: left;
+    margin: 100 0 0 50;
+    width: 35%;
+}
+
+.img-sec8 {
+    float: left;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.sec8-person {
+    font-size: 57;
+    padding: 2;
+}
+
+.sec8-h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10;
+    margin-left: 25%;
+}
+
+.sec8-h3 {
+    color: rgb(241, 165, 51);
+    font-size: 20;
+    margin-top: 5;
+    margin-left: 25%;
+}
+
+.sec8-p {
+    color: azure;
+    float: left;
+    font-size: 14;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15;
+    padding-left: 10;
+    word-spacing: 1.5;
+}
+
+.sec9-contaner {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.sec9-title {
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sec9-line {
+    width: 45%;
+    height: 3;
+    background-color: brown;
+    margin-top: 10;
+    margin-bottom: 30;
+    margin-left: 50;
+}
+
+.sec9-contaner {
+    width: 80%;
+    margin: auto;
+}
+
+.team9-item {
+    float: left;
+    width: 30%;
+    height: 300;
+    background-color: rgb(224, 218, 218);
+    padding: 16px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 2%;
+}
+
+.team9-img2 {
+    margin: 0 5%;
+}
+
+.team9-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team9-img img {
+    width: 100%;
+}
+
+.team9-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+}
+
+.team9-overlay i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(143, 31, 31, 0.8);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 40px;
+    margin-left: auto;
+
+}
+
+.team-info-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10;
+    margin-top: 15;
+}
+
+.team-info-span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgb(82, 79, 79);
+
+}
+
+.team9-item:hover .team-info-title {
+    color: rgb(95, 14, 14);
+}
+
+.team9-item:hover .team-info-span {
+    color: rgb(134, 13, 13);
+}
+
+.team9-item:hover .team9-overlay {
+    visibility: visible;
+}
+
+.team9-item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(165, 42, 42, 0.25);
+    transition: 0.5s;
+    border-radius: 2%;
+}
+
+.team9-item:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.sec10-contaner {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.recent10 {
+    float: left;
+    width: 30%;
+    padding: 16px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 2%;
+    border: 1px solid brown;
+}
+
+.recent-2 {
+    margin: 0 5%;
+}
+
+.recent-title {
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+
+.recent-h2 {
+    text-transform: capitalize;
+    font-size: 40;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recent-line {
+    width: 35%;
+    height: 3;
+    background-color: brown;
+    margin-top: 10;
+    margin-bottom: 30;
+    margin-left: 80;
+}
+
+.recent-img {
+    position: absolute;
+    border-radius: 3%;
+    z-index: 5;
+    margin-left: 7;
+}
+
+.recent-item {
+    margin: 250 0 15 0;
+    word-spacing: 10;
+    font-size: 18;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recent-item2 {
+    word-spacing: 0;
+}
+
+.recent-item i {
+    color: rgb(133, 30, 30);
+    margin: 0 5;
+}
+
+.recent-h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10 0;
+}
+
+.recent-p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 76, 76);
+    margin: 40 -20;
+}
+
+.recent-a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17;
+    color: brown;
+    position: absolute;
+    z-index: 5;
+    margin-left: -40;
+    margin-top: -15;
+}
+
+.recent10:hover .recent-h3 {
+    color: rgb(122, 118, 118);
+}
+
+.recent10:hover .recent-p {
+    color: rgb(161, 16, 16);
+}
+
+.recent10:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(165, 42, 42, 0.25);
+    transition: 0.5s;
+    border-radius: 2%;
+    z-index: 1;
+}
+
+.recent10:hover::after {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.sec11-contaner {
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0.438);
+    margin-top: 100;
+    height: 60vh;
+    text-align: center;
+}
+
+.sec11-img {
+    width: 250px;
+    margin: auto;
+    padding-top: 20;
+}
+
+.img11 {
+    border-radius: 5%;
+}
+
+.sec11-icon {
+    width: 40%;
+    margin: auto;
+    margin-top: 10;
+    overflow: auto;
+    text-align: center;
+    padding-left: 80;
+}
+
+.icon {
+    float: left;
+    width: 60;
+    height: 60;
+    border-radius: 50%;
+    font-size: 35;
+    padding-top: 10;
+    color: rgb(255, 255, 255);
+    background-color: rgb(199, 75, 75);
+    margin: 10 2;
+}
+
+.footer-p {
+    margin-top: 15;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(70, 68, 68);
+}
+
+.icon:hover {
+    background-color: rgb(167, 9, 9);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
